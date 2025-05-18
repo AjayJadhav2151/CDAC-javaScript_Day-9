@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .big {
+        background-color: aqua;
+        color: blue;
+        text-align: center;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p><img src="sahara.jpg" width="200" height="200" /></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("p").hover(
+          function () {
+            $(this).addClass("big");
+          },
+          function () {
+            $(this).removeClass("big");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

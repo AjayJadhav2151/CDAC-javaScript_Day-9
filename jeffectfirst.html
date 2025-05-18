@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        alert("doc ready");
+        $("#hide").click(function () {
+          $("#p").hide(1000);
+        });
+        $("#show").click(function () {
+          $("#p").show("slow");
+        });
+        $("#toggle").click(function () {
+          $("#p").toggle("slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>WELCOME TO SAHARA DESERT.</p>
+    <img src="sahara.jpg" id="p" width="200" height="200" />
+    <br />
+    <button id="hide">Hide Para</button>
+    <button id="show">Show para</button>
+    <button id="toggle">Toggle</button>
+  </body>
+</html>

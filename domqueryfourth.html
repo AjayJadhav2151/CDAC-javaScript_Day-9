@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("div").click(function () {
+          $("div").before("<h1>" + $("div p").text() + "</h1>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      style="
+        background-color: blueviolet;
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+      "
+    >
+      <p>WELCOME TO KNOW-IT</p>
+    </div>
+  </body>
+</html>

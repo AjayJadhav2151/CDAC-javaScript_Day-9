@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#empty").click(function () {
+          $("div").empty();
+        });
+        $("#remove").click(function () {
+          $("div").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p><img src="Hydrangeas copy.jpg" width="200" height="200" /></p>
+    </div>
+    <button type="button" id="empty">EMPTY</button>
+    <button type="button" id="remove">REMOVE</button>
+  </body>
+</html>
